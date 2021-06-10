@@ -65,6 +65,7 @@ ALFA: Using FTP python code
 \
 [o2_username@login03 ~] sbatch ALFA_pull.sh
 \
+\
 gnomAD: Using gsutils in transfer directory. Repeat for chromosomes 1, 6, 9, 12, 14, 16, 18
 \
 [o2_username@transfer01 ~]$ gsutil cp gs://gcp-public-data--gnomad/release/2.1.1/vcf/genomes/gnomad.genomes.v3.1.1.sites.chr21.vcf.bgz /home/o2_username/AF query tool location/gnomad.genomes.v3.1.1.sites.chr21_$(date +%F).vcf.bgz
