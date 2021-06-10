@@ -1,4 +1,5 @@
-# Allele Frequency Query Tool Documentation 04/23/2021
+# Allele Frequency Query Tool Documentation
+## 06/10/2021
 
 ## Purpose:
 The purpose of this tool is to extract allele frequencies (AF) and other genotype information from genotype databases (gnomAD, ALFA) to generate a flat file of variants of interest and their genotype information.
