@@ -6,12 +6,11 @@
 #SBATCH -t 0-12:00		# Run time D-HH:MM format
 #SBATCH -p short		# Partition to run in
 #SBATCH --mem=2000		# Memory total in MB (in all cores)
-#SBATCH -e /home/gao4/clinvar-master/src/error/hostname_%j.err	# File to which STDERR will be written, including jobID
+#SBATCH -e /home/gao4/clinvar-master/src/error/hostname_%j.err	# File to which STDERR will be written, including jobID 		# Change this
 #SBATCH --mail-type=ALL		# Type of email notification- BEGIN, END, FAIL, ALL
-#SBATCH --mail-user=grace.obrien@childrens.harvard.edu	# Email where notifications send to
+#SBATCH --mail-user=grace.obrien@childrens.harvard.edu	# Email where notifications send to						# Change this
 
 # Loading required module
-#cd /home/gao4/clinvar-master/src
 module load gcc/6.2.0 samtools/1.10
 module load vcftools
 module load bcftools
@@ -19,7 +18,7 @@ module load htslib/1.10.2
 
 # 1. Tabix vcf file so can use BCFtool commands
 
-#tabix -p vcf $1
+tabix -p vcf $1
 
 
 # 2. Reformat and name output, depending on input genotype database
@@ -63,7 +62,7 @@ fi
 if [[ $1  =~ ^ALFA ]]; then
 	 # Pull only variants in txt file from database. This is the slow step- can take over 1 hr
 
-#bcftools view --include ID==@$2 $1  --output-file ALFA_AF_1.vcf
+bcftools view --include ID==@$2 $1  --output-file ALFA_AF_1.vcf
 
 	# Filter out variables of interest into tsv file, change cut numbers if want more columns
 
