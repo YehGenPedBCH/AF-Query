@@ -75,6 +75,7 @@ gnomAD: Using gsutils in transfer directory. Repeat for chromosomes 1, 6, 9, 12,
 \
 [o2_username@login03 ~]  sbatch master_AF_query.sh ALFA_freq_2021-04-23.vcf.gz cardio_variants_2021-04-23.txt 
 \
+\
 This will output the flat TSV file:
 \
 ALFA_AF_cardio_variants_2021-04-23.tsv
@@ -82,6 +83,7 @@ ALFA_AF_cardio_variants_2021-04-23.tsv
 4.	Run AF_query with gnomAD genome database for chromosome 21.
 \
 [o2_username@login03 ~]  sbatch master_AF_query.sh gnomad.genomes.v3.1.1.sites.chr21_2021-04-23.vcf.bgz cardio_variants_2021-04-23.txt
+\
 \
 This will output the flat TSV file:
 \
